@@ -318,7 +318,6 @@ function BusquedaMasiva() {
         let generoCom = "";
         let actRet = "";
 
-        // Asignación de género
         if (i.genero === "M") {
             generoCom = "MASCULINO";
         } else if (i.genero === "F") {
@@ -327,7 +326,8 @@ function BusquedaMasiva() {
             generoCom = "OTRO";
         }
 
-        // Asignación de estado (corregido para usar i.estado en lugar de i.genero)
+
+
         if (i.estado === "R") {
             actRet = "RETIRADO";
         } else {
@@ -347,3 +347,16 @@ function BusquedaMasiva() {
 
     document.getElementById("cuerpo").innerHTML = salida;
 }
+
+function Retirado() {
+    let doc = parseInt(document.getElementById("tex-doc").value);
+    let indice = alumnos.findIndex(i => i.documento === doc);
+
+    if (indice !== -1) {
+        alumnos[indice].estado = "R";
+        alert("Alumno retirado exitosamente.");
+    } else {
+        alert("Alumno no encontrado.");
+    }
+}
+
