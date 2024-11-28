@@ -23,28 +23,43 @@
         <article>
             <ul>
                 <li>DOCUMENTO: <input type="text" id="tex-doc" onblur="Buscar()"></li>
-                <li>TIPO DOC: <input type="text" id="tex-tipo-doc"></li>
+                <li>TIPO DOC: <br>
+                    <ul>
+                        <li>
+                            <select name="tipo-doc" id="tex-tipo-doc" onfocus="tiposDoc()">
+                            </select>
+                        </li>
+                    </ul>
+                </li>
                 <li>NOMBRES: <input type="text" id="tex-nombre"></li>
                 <li>APELLIDOS: <input type="text" id="tex-apellido"></li>
                 <li>GENERO: <br>
                     <ul>
-                        <select name="genero" id="tex-genero">
-
-                            <option value="M">MASCULINO</option>
-                            <option value="F">FEMENINO</option>
-                            <option value="O">OTROS</option>
-                        </select>
+                        <li>
+                            <select name="genero" id="tex-genero" onfocus="Geners()">
+                            </select>
+                        </li>
                     </ul>
+                </li>
                 </li>
                 <li>ESTADO: <br>
                     <ul>
-                        <select name="estado" id="tex-estado">
-                            <option value="A">ACTIVO</option>
-                            <option value="R">RETIRADO</option>
-                        </select>
+                        <li>
+                            <select name="estado" id="tex-estado" onfocus="EstadoCam()">
+                            </select>
+                        </li>
+
                     </ul>
                 </li>
-                <li>CIUDAD DE NACIMIENTO: <input type="text" id="tex-ciudad-nac"></li>
+                <li>CIUDAD DE NACIMIENTO:<br>
+                    <ul>
+                        <li>
+                            <select name="ciudad" id="tex-ciudad-nac" onfocus="Municipio()">
+                            </select>
+                        </li>
+
+                    </ul>
+                </li>
             </ul>
 
         </article>
@@ -78,7 +93,12 @@
 
     </section>
 </main>
+
 <script src="js/index.js"></script>
+<script src="js/genero.js"></script>
+<script src="js/ESTADO.js"></script>
+<script src="js/TiposDoc.js"></script>
+<script src="js/ciudad.js"></script>
 </body>
 
 </html>

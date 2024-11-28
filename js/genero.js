@@ -1,0 +1,21 @@
+let Generos = [
+    {cod_genero: "M",
+        des_genero: "Masculino",
+    },
+    {cod_genero: "F",
+        des_genero: "Femenino",
+    },
+    {cod_genero: "L",
+        des_genero: "Lesbiana",
+    },
+    {cod_genero: "G",
+        des_genero: "Gay",
+    },
+    {cod_genero: "B",
+        des_genero: "Bisexual",
+    },
+    {cod_genero: "T",
+        des_genero: "Transexual",
+    },
+]
+
